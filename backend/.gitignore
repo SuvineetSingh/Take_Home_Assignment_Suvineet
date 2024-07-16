@@ -1,0 +1,15 @@
+# Byte-compile / optimization files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Environment secrets
+.env
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
