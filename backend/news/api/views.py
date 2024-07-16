@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 
 class EverythingNews(APIView):
     def get(self, request):
-        # query = request.query_params.get('q','')
         url = f'https://newsapi.org/v2/top-headlines?country=us&apiKey={settings.NEWS_API_KEY}'
         if not settings.NEWS_API_KEY:
             return Response({"error": "API key is not configured."}, status=500)
