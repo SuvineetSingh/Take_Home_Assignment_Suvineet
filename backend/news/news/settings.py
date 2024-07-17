@@ -78,9 +78,14 @@ CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     'https://localhost:5173', 
     'https://127.0.0.1:8000',
-    'https://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
+    'http://3.80.37.239:8000'
+    'http://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
 ]
 
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+]
 WSGI_APPLICATION = 'news.wsgi.application'
 
 
