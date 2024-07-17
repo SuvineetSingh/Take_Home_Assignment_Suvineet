@@ -9,7 +9,7 @@ function CategoryNews() {
   const { categoryName } = useParams();
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/category/${categoryName}/`)
+    fetch(`http://3.80.37.239:8000/category/${categoryName}/`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP status ${response.status}`);

@@ -5,7 +5,7 @@ function NewsArticles() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/everything/")
+    fetch("http://3.80.37.239:8000/everything/")
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error("Error fetching news", error));
