@@ -26,7 +26,6 @@ function NewsItem({ article }) {
               alt="Article visual representation"
               style={{
                 width: "100%",
-                maxHeight: "500px",
               }}
             />
           )}

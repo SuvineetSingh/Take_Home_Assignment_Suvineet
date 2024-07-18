@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 class EverythingNews(APIView):
     def get(self, request):
-        url = f'https://newsapi.org/v2/top-headlines?country=us&apiKey={settings.NEWS_API_KEY}'
+        url = f'https://newsapi.org/v2/everything?domains=techcrunch.com&apiKey={settings.NEWS_API_KEY}'
         if not settings.NEWS_API_KEY:
             return Response({"error": "API key is not configured."}, status=500)
         response = requests.get(url)
@@ -22,11 +22,11 @@ class EverythingNews(APIView):
         
 class CategoryNews(APIView):
     def get(self, request, category):
-        country = request.query_params.get('country', 'us')
-        url = f'https://newsapi.org/v2/top-headlines?country={country}&category={category}&apiKey={settings.NEWS_API_KEY}'
+        url = f'https://newsapi.org/v2/top-headlines?country=us&category={category}&apiKey={settings.NEWS_API_KEY}'
         response = requests.get(url)
         if response.status_code == 200:
             return Response(response.json())
         else:
             logger.error(f'Error fetching {category} news')
             return Response({'error': 'Failed to fetch data', 'status': response.status_code}, status=response.status_code)
+        
