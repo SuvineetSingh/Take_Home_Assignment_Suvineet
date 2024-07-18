@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-xr0po06@+fkz7fs^4_to#*s+c*545@cd01#f6cw+(gn4i6fiz)
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '3.80.37.239'
+    '3.80.37.239',
+    'suvineetroulletteassignment.com',
+    'www.suvineetroulletteassignment.com',
 ]
 
 
@@ -76,7 +78,7 @@ TEMPLATES = [
 
 CORS_ALLOW_ALL_ORIGINS = False 
 CORS_ALLOWED_ORIGINS = [
-    'https://localhost:5173', 
+    'http://suvineetroulletteassignment.com',
     'https://127.0.0.1:8000',
     'http://3.80.37.239:8000',
     'http://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
