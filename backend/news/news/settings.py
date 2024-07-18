@@ -87,6 +87,12 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = [
     'content-type',
     'authorization',
+    'x-requested-with',
+    'x-csrf-token',  
+    'accept',        
+    'origin',
+    'accept-encoding',
+    'accept-language',
 ]
 WSGI_APPLICATION = 'news.wsgi.application'
 
