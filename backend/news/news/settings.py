@@ -30,6 +30,9 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'suvineetroulletteassignment.com',
     'suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
+    'd3cmww4bawiw3u.cloudfront.net',
+    'd1k6s57igvik2h.cloudfront.net',
+    
 ]
 
 
@@ -82,6 +85,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://suvineetroulletteassignment.com',
     'http://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
+    'https://d1k6s57igvik2h.cloudfront.net',
+    'https://d3cmww4bawiw3u.cloudfront.net',
 ]
 
 CORS_ALLOW_HEADERS = [

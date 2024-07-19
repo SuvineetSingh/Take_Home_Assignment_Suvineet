@@ -3,9 +3,9 @@ import NewsItem from "./NewsItem";
 
 function NewsArticles() {
   const [articles, setArticles] = useState([]);
-
+  // http://44.194.142.222:8000/everything/
   useEffect(() => {
-    fetch("http://44.194.142.222:8000/everything/")
+    fetch("https://d1k6s57igvik2h.cloudfront.net/everything/")
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error("Error fetching news", error));
@@ -21,7 +21,7 @@ function NewsArticles() {
           ))}
         </ul>
       ) : (
-        <p>No articles found!</p>
+        <p className="place-self-center">No articles found!</p>
       )}
     </div>
   );
