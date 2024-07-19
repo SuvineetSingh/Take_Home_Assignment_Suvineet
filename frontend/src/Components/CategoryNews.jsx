@@ -7,9 +7,9 @@ import { useParams } from "react-router-dom";
 function CategoryNews() {
   const [articles, setArticles] = useState([]);
   const { categoryName } = useParams();
-
+  // https://d1k6s57igvik2h.cloudfront.net/category/${categoryName}/
   useEffect(() => {
-    fetch(`https://d1k6s57igvik2h.cloudfront.net/category/${categoryName}/`)
+    fetch(`https://suvineetroulletteassignment.com/category/${categoryName}/`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP status ${response.status}`);
