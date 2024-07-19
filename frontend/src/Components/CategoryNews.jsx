@@ -9,7 +9,7 @@ function CategoryNews() {
   const { categoryName } = useParams();
   // https://d1k6s57igvik2h.cloudfront.net/category/${categoryName}/
   useEffect(() => {
-    fetch(`https://suvineetroulletteassignment.com/category/${categoryName}/`)
+    fetch(`https://suvineetroulletteassignment.com/api/category/${categoryName}/`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP status ${response.status}`);
