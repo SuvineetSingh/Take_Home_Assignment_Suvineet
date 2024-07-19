@@ -83,7 +83,7 @@ TEMPLATES = [
 CORS_ALLOW_ALL_ORIGINS = False 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'http://suvineetroulletteassignment.com',
+    'https://suvineetroulletteassignment.com',
     'http://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
     'https://d1k6s57igvik2h.cloudfront.net',
     'https://d3cmww4bawiw3u.cloudfront.net',
