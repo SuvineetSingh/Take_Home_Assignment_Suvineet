@@ -3,9 +3,8 @@ import NewsItem from "./NewsItem";
 
 function NewsArticles() {
   const [articles, setArticles] = useState([]);
-  // http://44.194.142.222:8000/everything/
   useEffect(() => {
-    fetch("https://suvineetroulletteassignment.com/api/everything/")
+    fetch("http://44.194.142.222:8000/everything/")
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error("Error fetching news", error));

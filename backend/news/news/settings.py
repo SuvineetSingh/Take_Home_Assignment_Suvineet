@@ -82,9 +82,16 @@ TEMPLATES = [
 
 CORS_ALLOW_ALL_ORIGINS = False 
 CORS_ALLOWED_ORIGINS = [
+    # 'http://localhost:5173',
+    # 'https://suvineetroulletteassignment.com',
+    # 'https://api.suvineetroulletteassignment.com',
+    # 'http://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
+    # 'https://d1k6s57igvik2h.cloudfront.net',
+    # 'https://d3cmww4bawiw3u.cloudfront.net',
     'http://localhost:5173',
     'https://suvineetroulletteassignment.com',
-    'http://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
+    'https://api.suvineetroulletteassignment.com',
+    'https://suvineetroulettechassignment.s3-website-us-east-1.amazonaws.com',
     'https://d1k6s57igvik2h.cloudfront.net',
     'https://d3cmww4bawiw3u.cloudfront.net',
 ]
