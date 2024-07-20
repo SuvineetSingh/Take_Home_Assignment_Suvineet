@@ -4,7 +4,7 @@ import NewsItem from "./NewsItem";
 function NewsArticles() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    fetch("http://44.194.142.222:8000/everything/")
+    fetch("https://d2at2pf9baeduj.cloudfront.net/everything/")
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error("Error fetching news", error));
